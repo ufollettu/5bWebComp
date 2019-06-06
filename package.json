@@ -1,6 +1,6 @@
 {
   "name": "web-components-boilerplate",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "./web-components-library/src/index.ts",
   "repository": {
