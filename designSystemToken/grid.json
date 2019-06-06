@@ -1,0 +1,20 @@
+{
+  "grid-mobile": {
+    "grid-mobile-viewport": "< 768pt",
+    "grid-mobile-column": "4",
+    "grid-mobile-margin": "16pt",
+    "grid-mobile-gutter": "16pt"
+  },
+  "grid-table": {
+    "grid-tablet-viewport": "≥ 768pt",
+    "grid-tablet-column": "8",
+    "grid-tablet-margin": "24pt",
+    "grid-tablet-gutter": "24pt"
+  },
+  "grid-desktop": {
+    "grid-desktop-viewport": "≥ 1024pt",
+    "grid-desktop-column": "12",
+    "grid-desktop-margin": "24pt",
+    "grid-desktop-gutter": "24pt"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "base": {
+    "style-spacing-base-x1": "8pt",
+    "style-spacing-base-x2": "16pt",
+    "style-spacing-base-x3": "24pt",
+    "style-spacing-base-x4 ": "32pt"
+  },
+  "half": {
+    "style-spacing-half-x1": "4pt",
+    "style-spacing-half-x3": "12pt",
+    "style-spacing-half-x5": "20pt"
+  }
+}
