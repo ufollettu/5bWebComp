@@ -9,53 +9,27 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MyComponent {
-    /**
-    * The first name
-    */
-    'first': string;
-    /**
-    * The last name
-    */
-    'last': string;
-    /**
-    * The middle name
-    */
-    'middle': string;
-  }
+  interface MyFooter {}
 }
 
 declare global {
 
 
-  interface HTMLMyComponentElement extends Components.MyComponent, HTMLStencilElement {}
-  var HTMLMyComponentElement: {
-    prototype: HTMLMyComponentElement;
-    new (): HTMLMyComponentElement;
+  interface HTMLMyFooterElement extends Components.MyFooter, HTMLStencilElement {}
+  var HTMLMyFooterElement: {
+    prototype: HTMLMyFooterElement;
+    new (): HTMLMyFooterElement;
   };
   interface HTMLElementTagNameMap {
-    'my-component': HTMLMyComponentElement;
+    'my-footer': HTMLMyFooterElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface MyComponent extends JSXBase.HTMLAttributes<HTMLMyComponentElement> {
-    /**
-    * The first name
-    */
-    'first'?: string;
-    /**
-    * The last name
-    */
-    'last'?: string;
-    /**
-    * The middle name
-    */
-    'middle'?: string;
-  }
+  interface MyFooter extends JSXBase.HTMLAttributes<HTMLMyFooterElement> {}
 
   interface IntrinsicElements {
-    'my-component': MyComponent;
+    'my-footer': MyFooter;
   }
 }
 
