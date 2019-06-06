@@ -17,18 +17,10 @@
   "scripts": {
     "build": "stencil build --docs",
     "start": "stencil build --dev --watch --serve",
-    "generate": "plop --plopfile internals/generators/index.js"
-  },
-  "pre-commit": {
-    "colors": true,
-    "silent": false,
-    "run": [
-      "build"
-    ]
+    "generate": "plop --plopfile internals/generators/index.js",
   },
   "devDependencies": {
     "@stencil/core": "1.0.0-beta.8",
-    "pre-commit": "^1.2.2",
     "plop": "^2.1.0"
   },
   "license": "MIT",
