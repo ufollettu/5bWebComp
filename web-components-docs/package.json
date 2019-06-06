@@ -1,0 +1,19 @@
+{
+  "name": "web-components-docs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "start-storybook -p 6006",
+    "build": "build-storybook"
+  },
+  "keywords": [],
+  "author": "Nicola Bertelloni",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@storybook/html": "^5.1.1",
+    "babel-loader": "^8.0.6"
+  }
+}
