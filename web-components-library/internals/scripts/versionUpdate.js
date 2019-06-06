@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const packagePath = 'package.json';
+const packagePath = './web-components-library/package.json';
 
 fs.readFile(packagePath, 'utf8', (err, data) => {
   if (err) throw err;
