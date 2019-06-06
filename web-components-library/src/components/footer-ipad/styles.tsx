@@ -1,4 +1,4 @@
-import styled from 'styled-stencil';
+import styled from 'styled-stencils';
 
 export const Wrap = styled.footer`
   display: grid;
