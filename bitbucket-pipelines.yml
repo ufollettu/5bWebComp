@@ -47,10 +47,12 @@ pipelines:
             caches:
               - node
             script:
+              - cd ./web-components-library
               - yarn 
               - pipe: atlassian/npm-publish:0.2.0
                 variables:
                   NPM_TOKEN: ${NPM_TOKEN}
+              - cd ..
         - step:
             name: Build docs
             image: node:11
