@@ -1,4 +1,4 @@
-# my-footer
+# Footer iPad
 
 <!-- Auto Generated Below -->
 
@@ -11,5 +11,3 @@
 | `middle` | `middle`  | The middle name | `string` | `undefined` |
 
 ---
-
-_Built with [StencilJS](https://stenciljs.com/)_

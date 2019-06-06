@@ -9,27 +9,27 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface MyFooter {}
+  interface FooterIpad {}
 }
 
 declare global {
 
 
-  interface HTMLMyFooterElement extends Components.MyFooter, HTMLStencilElement {}
-  var HTMLMyFooterElement: {
-    prototype: HTMLMyFooterElement;
-    new (): HTMLMyFooterElement;
+  interface HTMLFooterIpadElement extends Components.FooterIpad, HTMLStencilElement {}
+  var HTMLFooterIpadElement: {
+    prototype: HTMLFooterIpadElement;
+    new (): HTMLFooterIpadElement;
   };
   interface HTMLElementTagNameMap {
-    'my-footer': HTMLMyFooterElement;
+    'footer-ipad': HTMLFooterIpadElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface MyFooter extends JSXBase.HTMLAttributes<HTMLMyFooterElement> {}
+  interface FooterIpad extends JSXBase.HTMLAttributes<HTMLFooterIpadElement> {}
 
   interface IntrinsicElements {
-    'my-footer': MyFooter;
+    'footer-ipad': FooterIpad;
   }
 }
 
