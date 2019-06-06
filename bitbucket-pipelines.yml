@@ -1,0 +1,29 @@
+pipelines:
+  default:
+    - step:
+        name: Build library
+        image: node:11
+        caches:
+          - node
+        script:
+          - cd ./web-components-library
+          - yarn 
+          - yarn build
+          - cd ..
+        artifacts:
+          - web-components-library/dist/**
+          - web-components-library/loader/**
+    - step:
+        name: Build docs
+        image: node:11
+        caches:
+          - node
+        script:
+          - cd ./web-components-docs
+          - yarn 
+          - yarn build
+          - cd ..
+        artifacts:
+          - web-components-docs/storybook-static/**
+
+
