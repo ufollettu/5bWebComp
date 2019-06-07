@@ -1,11 +1,11 @@
 {
   "border": {
-    "style-border-size ": "2pt",
-    "style-border-size-1": "1pt"
+    "style-border-size ": "2px",
+    "style-border-size-1": "1px"
   },
   "radius": {
-    "style-radius-base": "4pt",
-    "style-radius-min": "0pt",
-    "style-radius-max": "100% rounded"
+    "style-radius-base": "4px",
+    "style-radius-min": "0",
+    "style-radius-max": "100%"
   }
 }
