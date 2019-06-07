@@ -7,7 +7,7 @@
 }
 
 @font-face {
-  font-family: 'Proxima Nova Rg';
+  font-family: 'Proxima Nova';
   src: url('./assets/fonts/ProximaNova-Bold.woff2') format('woff2'),
     url('./assets/fonts/ProximaNova-Bold.woff') format('woff');
   font-weight: bold;
@@ -28,4 +28,9 @@
     url('./assets/fonts/ProximaNova-Regular.woff') format('woff');
   font-weight: normal;
   font-style: normal;
+}
+
+
+body * {
+  box-sizing: border-box;
 }

@@ -10,6 +10,12 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface FooterIpad {}
+  interface ZanichelliButton {
+    'action'?: Function;
+    'hasicon': boolean;
+    'isprimary': boolean;
+    'label': string;
+  }
 }
 
 declare global {
@@ -20,16 +26,30 @@ declare global {
     prototype: HTMLFooterIpadElement;
     new (): HTMLFooterIpadElement;
   };
+
+  interface HTMLZanichelliButtonElement extends Components.ZanichelliButton, HTMLStencilElement {}
+  var HTMLZanichelliButtonElement: {
+    prototype: HTMLZanichelliButtonElement;
+    new (): HTMLZanichelliButtonElement;
+  };
   interface HTMLElementTagNameMap {
     'footer-ipad': HTMLFooterIpadElement;
+    'zanichelli-button': HTMLZanichelliButtonElement;
   }
 }
 
 declare namespace LocalJSX {
   interface FooterIpad extends JSXBase.HTMLAttributes<HTMLFooterIpadElement> {}
+  interface ZanichelliButton extends JSXBase.HTMLAttributes<HTMLZanichelliButtonElement> {
+    'action'?: Function;
+    'hasicon'?: boolean;
+    'isprimary'?: boolean;
+    'label'?: string;
+  }
 
   interface IntrinsicElements {
     'footer-ipad': FooterIpad;
+    'zanichelli-button': ZanichelliButton;
   }
 }
 
