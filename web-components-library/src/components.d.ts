@@ -6,10 +6,16 @@
 
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
+import {
+  TabItem,
+} from './beans/index.js';
 
 
 export namespace Components {
   interface FooterIpad {}
+  interface ZaniTab {
+    'tabProps': TabItem;
+  }
 }
 
 declare global {
@@ -20,16 +26,27 @@ declare global {
     prototype: HTMLFooterIpadElement;
     new (): HTMLFooterIpadElement;
   };
+
+  interface HTMLZaniTabElement extends Components.ZaniTab, HTMLStencilElement {}
+  var HTMLZaniTabElement: {
+    prototype: HTMLZaniTabElement;
+    new (): HTMLZaniTabElement;
+  };
   interface HTMLElementTagNameMap {
     'footer-ipad': HTMLFooterIpadElement;
+    'zani-tab': HTMLZaniTabElement;
   }
 }
 
 declare namespace LocalJSX {
   interface FooterIpad extends JSXBase.HTMLAttributes<HTMLFooterIpadElement> {}
+  interface ZaniTab extends JSXBase.HTMLAttributes<HTMLZaniTabElement> {
+    'tabProps'?: TabItem;
+  }
 
   interface IntrinsicElements {
     'footer-ipad': FooterIpad;
+    'zani-tab': ZaniTab;
   }
 }
 
