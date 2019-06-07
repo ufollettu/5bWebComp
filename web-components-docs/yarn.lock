@@ -792,6 +792,13 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
+"@stencil/core@*":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.0.1.tgz#8dc9bf79e62f20387ec67cf2035eac162ffef278"
+  integrity sha512-q+K+CNZHX9dg1d2KG9JQelGQPpPFqXBE/CvhBMZd3Y4YwTEQf+8rQ6C8GDI2RXbqh63Xro28QgixnDdzDu0zZw==
+  dependencies:
+    typescript "3.5.1"
+
 "@storybook/addons@5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.1.1.tgz#6457c4f60ae0cc49ad4919c45272b1cc181b217c"
@@ -6368,6 +6375,11 @@ style-loader@^0.23.1:
     loader-utils "^1.1.0"
     schema-utils "^1.0.0"
 
+styled-stencils@^0.1.27:
+  version "0.1.30"
+  resolved "https://registry.yarnpkg.com/styled-stencils/-/styled-stencils-0.1.30.tgz#07dfdebc7c1125083271ee03bd5e52240ffc8fef"
+  integrity sha512-bYUkJlTfrCEp4cakLy6QMEkivJPYcCOhSn2QR8ilsJA/JG9V5z0U4iko2bbJxFcC5wSQKwYB1GwMzUxxKegUbg==
+
 supports-color@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/supports-color/-/supports-color-2.0.0.tgz#535d045ce6b6363fa40117084629995e9df324c7"
@@ -6581,6 +6593,11 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+
+typescript@3.5.1:
+  version "3.5.1"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.1.tgz#ba72a6a600b2158139c5dd8850f700e231464202"
+  integrity sha512-64HkdiRv1yYZsSe4xC1WVgamNigVYjlssIoaH2HcZF0+ijsk5YK2g0G34w9wJkze8+5ow4STd22AynfO6ZYYLw==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
@@ -6798,6 +6815,13 @@ watchpack@^1.5.0:
     chokidar "^2.0.2"
     graceful-fs "^4.1.2"
     neo-async "^2.5.0"
+
+web-components-library@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/web-components-library/-/web-components-library-0.0.3.tgz#3d7e5d32b49ce0a313500fcd036e8474fa80d305"
+  integrity sha512-tKz5KnKZEn4b0HkNKi/Ps3yusTM4aWB+us+rqhXVkwWVKKuVQKDKNZHjsu3VAQ8GaJaw8C35m83wyLiEFjzjyA==
+  dependencies:
+    styled-stencils "^0.1.27"
 
 webpack-dev-middleware@^3.7.0:
   version "3.7.0"

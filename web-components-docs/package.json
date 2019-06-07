@@ -10,7 +10,9 @@
   "keywords": [],
   "author": "Nicola Bertelloni",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "web-components-library": "^0.0.3"
+  },
   "devDependencies": {
     "@babel/core": "^7.4.5",
     "@storybook/html": "^5.1.1",
