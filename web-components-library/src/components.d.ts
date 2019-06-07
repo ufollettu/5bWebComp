@@ -10,6 +10,13 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface FooterIpad {}
+  interface ListItem {
+    'icon'?: string;
+    'text': string;
+  }
+  interface MenuZanichelli {
+    'isOpen': boolean;
+  }
 }
 
 declare global {
@@ -20,16 +27,39 @@ declare global {
     prototype: HTMLFooterIpadElement;
     new (): HTMLFooterIpadElement;
   };
+
+  interface HTMLListItemElement extends Components.ListItem, HTMLStencilElement {}
+  var HTMLListItemElement: {
+    prototype: HTMLListItemElement;
+    new (): HTMLListItemElement;
+  };
+
+  interface HTMLMenuZanichelliElement extends Components.MenuZanichelli, HTMLStencilElement {}
+  var HTMLMenuZanichelliElement: {
+    prototype: HTMLMenuZanichelliElement;
+    new (): HTMLMenuZanichelliElement;
+  };
   interface HTMLElementTagNameMap {
     'footer-ipad': HTMLFooterIpadElement;
+    'list-item': HTMLListItemElement;
+    'menu-zanichelli': HTMLMenuZanichelliElement;
   }
 }
 
 declare namespace LocalJSX {
   interface FooterIpad extends JSXBase.HTMLAttributes<HTMLFooterIpadElement> {}
+  interface ListItem extends JSXBase.HTMLAttributes<HTMLListItemElement> {
+    'icon'?: string;
+    'text'?: string;
+  }
+  interface MenuZanichelli extends JSXBase.HTMLAttributes<HTMLMenuZanichelliElement> {
+    'isOpen'?: boolean;
+  }
 
   interface IntrinsicElements {
     'footer-ipad': FooterIpad;
+    'list-item': ListItem;
+    'menu-zanichelli': MenuZanichelli;
   }
 }
 
