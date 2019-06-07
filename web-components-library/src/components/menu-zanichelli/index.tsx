@@ -32,8 +32,8 @@ export class MenuZanichelli {
           <ul>
             <list-item text="La mia libreria" />
             <list-item text="Ambienti Zanichelli" />
+            <button class="download">@ Scarica la app Booktab</button>
           </ul>
-          <button class="download">@ Scarica la app Booktab</button>
         </div>
         <footer class="footer">
           <ul>
