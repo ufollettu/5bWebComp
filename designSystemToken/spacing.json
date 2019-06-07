@@ -1,13 +1,13 @@
 {
   "base": {
-    "style-spacing-base-x1": "8pt",
-    "style-spacing-base-x2": "16pt",
-    "style-spacing-base-x3": "24pt",
-    "style-spacing-base-x4 ": "32pt"
+    "style-spacing-base-x1": "8px",
+    "style-spacing-base-x2": "16px",
+    "style-spacing-base-x3": "24px",
+    "style-spacing-base-x4 ": "32px"
   },
   "half": {
-    "style-spacing-half-x1": "4pt",
-    "style-spacing-half-x3": "12pt",
-    "style-spacing-half-x5": "20pt"
+    "style-spacing-half-x1": "4px",
+    "style-spacing-half-x3": "12px",
+    "style-spacing-half-x5": "20px"
   }
 }
