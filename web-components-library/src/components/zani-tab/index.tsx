@@ -1,31 +1,16 @@
-import {Component, Prop, h} from '@stencil/core';
+import { Component, Prop, h } from "@stencil/core";
 
-import {Wrap} from './styles';
-import {TabItem} from '../../beans/index.js';
-
-
-
+import { Wrap } from "./styles";
 
 @Component({
-  tag: 'zani-tab',
-  styleUrl: '../../global-styles.css'
+  tag: "zani-tab",
+  styleUrl: "../../global-styles.css"
 })
-
 export class ZaniTab {
-
-  @Prop() tabProps: TabItem;
-
-  changeTab() {
-    window.alert('change tab');
-  };
+  @Prop() tabname: string;
+  @Prop() someFunc: Function;
 
   render() {
-    return (
-      <Wrap>
-        <div class='selected' onClick={this.changeTab}>
-          <p>ciao</p>
-        </div>
-      </Wrap>
-    );
+    return <Wrap onClick={this.someFunc.bind(this)}>{this.tabname}</Wrap>;
   }
 }

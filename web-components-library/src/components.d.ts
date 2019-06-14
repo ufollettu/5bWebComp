@@ -6,15 +6,16 @@
 
 
 import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
-import {
-  TabItem,
-} from './beans/index.js';
 
 
 export namespace Components {
   interface FooterIpad {}
+  interface TabWrapper {
+    'myProp': string;
+  }
   interface ZaniTab {
-    'tabProps': TabItem;
+    'someFunc': Function;
+    'tabname': string;
   }
 }
 
@@ -27,6 +28,12 @@ declare global {
     new (): HTMLFooterIpadElement;
   };
 
+  interface HTMLTabWrapperElement extends Components.TabWrapper, HTMLStencilElement {}
+  var HTMLTabWrapperElement: {
+    prototype: HTMLTabWrapperElement;
+    new (): HTMLTabWrapperElement;
+  };
+
   interface HTMLZaniTabElement extends Components.ZaniTab, HTMLStencilElement {}
   var HTMLZaniTabElement: {
     prototype: HTMLZaniTabElement;
@@ -34,18 +41,24 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'footer-ipad': HTMLFooterIpadElement;
+    'tab-wrapper': HTMLTabWrapperElement;
     'zani-tab': HTMLZaniTabElement;
   }
 }
 
 declare namespace LocalJSX {
   interface FooterIpad extends JSXBase.HTMLAttributes<HTMLFooterIpadElement> {}
+  interface TabWrapper extends JSXBase.HTMLAttributes<HTMLTabWrapperElement> {
+    'myProp'?: string;
+  }
   interface ZaniTab extends JSXBase.HTMLAttributes<HTMLZaniTabElement> {
-    'tabProps'?: TabItem;
+    'someFunc'?: Function;
+    'tabname'?: string;
   }
 
   interface IntrinsicElements {
     'footer-ipad': FooterIpad;
+    'tab-wrapper': TabWrapper;
     'zani-tab': ZaniTab;
   }
 }

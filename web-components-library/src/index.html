@@ -8,12 +8,15 @@
 
     <script type="module" src="/build/web-components-library.esm.js"></script>
     <script nomodule src="/build/web-components-library.js"></script>
+    <script>
+      function someFunc(){ window.alert('Ciao bello!')}
+    </script>
   </head>
 
   <body>
-
-    <footer-ipad></footer-ipad>
-    <zani-tab order="provola"></zani-tab>
+    <tab-wrapper selected="true" tabname="Tab"  someFunc="someFunc()"></tab-wrapper>
   </body>
+
+
 
 </html>
