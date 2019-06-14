@@ -1,4 +1,4 @@
-import { Component, Prop, h } from "@stencil/core";
+import { Component, h, State } from "@stencil/core";
 
 import { Wrap } from "./styles";
 
@@ -7,31 +7,37 @@ import { Wrap } from "./styles";
   styleUrl: "../../global-styles.css"
 })
 export class MenuZanichelli {
-  @Prop() isOpen: boolean;
+  @State() isopen: boolean;
 
   constructor() {
     this.handleMenuOpen = this.handleMenuOpen.bind(this);
-    this.handleisOpen = this.handleisOpen.bind(this);
+    this.handleIsopen = this.handleIsopen.bind(this);
     this.handleContentOpen = this.handleContentOpen.bind(this);
   }
 
-  handleisOpen(): HTMLButtonElement {
-    return this.isOpen ? (
-      <button> Menu X</button>
-    ) : (
-      <button>
-        <span>-</span>
-      </button>
-    );
+  handleIsopen(): HTMLButtonElement {
+    if (!this.isopen) {
+      return (
+        <button>
+          <span>-</span>
+        </button>
+      );
+    }
+
+    return <button> Menu X</button>;
   }
 
   handleContentOpen(): HTMLElement {
-    return this.isOpen ? (
+    if (!this.isopen) {
+      return <div />;
+    }
+
+    return (
       <div>
         <div>
           <ul>
             <list-item text="La mia libreria" />
-            <list-item text="Ambienti Zanichelli" />
+            <list-item text="Ambienti zanichelli" />
             <button class="download">@ Scarica la app Booktab</button>
           </ul>
         </div>
@@ -43,23 +49,21 @@ export class MenuZanichelli {
           </ul>
         </footer>
       </div>
-    ) : (
-      <div />
     );
   }
   handleMenuOpen(e): void {
     e.preventDefault();
-    this.isOpen = !this.isOpen;
+    this.isopen = !this.isopen;
   }
 
   render() {
     return (
-      <Wrap>
+      <Wrap isopen={this.isopen}>
         <section class="header">
           <div>
             <img src="../../assets/images/png/zanichelli-logo-footer.png" />
           </div>
-          <div onClick={this.handleMenuOpen}>{this.handleisOpen()}</div>
+          <div onClick={this.handleMenuOpen}>{this.handleIsopen()}</div>
         </section>
         <section class="content">
           <div>{this.handleContentOpen()}</div>

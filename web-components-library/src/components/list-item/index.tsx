@@ -2,7 +2,6 @@ import { Component, Prop, h } from "@stencil/core";
 
 import { Wrap } from "./styles";
 
-
 @Component({
   tag: "list-item",
   styleUrl: "../../global-styles.css"
@@ -14,9 +13,8 @@ export class ListItem {
   render() {
     return (
       <Wrap>
-        <li>
-          <span><span>{this.icon} </span>{this.text}</span>
-        </li>
+        <span>{this.icon} </span>
+        {this.text}
       </Wrap>
     );
   }

@@ -14,9 +14,7 @@ export namespace Components {
     'icon'?: string;
     'text': string;
   }
-  interface MenuZanichelli {
-    'isOpen': boolean;
-  }
+  interface MenuZanichelli {}
 }
 
 declare global {
@@ -52,9 +50,7 @@ declare namespace LocalJSX {
     'icon'?: string;
     'text'?: string;
   }
-  interface MenuZanichelli extends JSXBase.HTMLAttributes<HTMLMenuZanichelliElement> {
-    'isOpen'?: boolean;
-  }
+  interface MenuZanichelli extends JSXBase.HTMLAttributes<HTMLMenuZanichelliElement> {}
 
   interface IntrinsicElements {
     'footer-ipad': FooterIpad;
