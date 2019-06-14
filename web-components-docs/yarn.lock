@@ -792,13 +792,6 @@
     react-lifecycles-compat "^3.0.4"
     warning "^3.0.0"
 
-"@stencil/core@*":
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/@stencil/core/-/core-1.0.1.tgz#8dc9bf79e62f20387ec67cf2035eac162ffef278"
-  integrity sha512-q+K+CNZHX9dg1d2KG9JQelGQPpPFqXBE/CvhBMZd3Y4YwTEQf+8rQ6C8GDI2RXbqh63Xro28QgixnDdzDu0zZw==
-  dependencies:
-    typescript "3.5.1"
-
 "@storybook/addons@5.1.1":
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/@storybook/addons/-/addons-5.1.1.tgz#6457c4f60ae0cc49ad4919c45272b1cc181b217c"
@@ -6593,11 +6586,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-typescript@3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.5.1.tgz#ba72a6a600b2158139c5dd8850f700e231464202"
-  integrity sha512-64HkdiRv1yYZsSe4xC1WVgamNigVYjlssIoaH2HcZF0+ijsk5YK2g0G34w9wJkze8+5ow4STd22AynfO6ZYYLw==
 
 ua-parser-js@^0.7.18:
   version "0.7.19"
