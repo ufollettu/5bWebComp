@@ -9,10 +9,8 @@ import {
 // import fonts from 'constants/fonts'
 
 export const Wrap = styled.button`
-   {
-    border-radius: ${radius["style-radius-base"]};
-    border: ${border["style-border-size "]};
-    height: 36px;
-    width: 145px;
-  }
+  border-radius: ${radius["style-radius-base"]};
+  border: ${border["style-border-size "]};
+  height: 36px;
+  width: 145px;
 `;

@@ -4,13 +4,28 @@ import { Wrap } from "./styles";
 
 @Component({
   tag: "zani-tab",
-  styleUrl: "../../global-styles.css"
+  styleUrl: "styles.css"
 })
 export class ZaniTab {
   @Prop() tabname: string;
   @Prop() someFunc: Function;
 
+  constructor() {
+    this.handleOnClick = this.handleOnClick.bind(this);
+  }
+
+  handleOnClick(e) {
+    e.preventDefault();
+    this.someFunc();
+  }
+
   render() {
-    return <Wrap onClick={this.someFunc.bind(this)}>{this.tabname}</Wrap>;
+    return (
+      <div>
+        <Wrap onClick={this.handleOnClick}>{this.tabname}</Wrap>
+        <br />
+        <button onClick={this.handleOnClick}>{this.tabname}</button>
+      </div>
+    );
   }
 }
