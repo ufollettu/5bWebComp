@@ -15,7 +15,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
-    "@storybook/html": "^5.1.1",
+    "@storybook/html": "^6.5.13",
     "babel-loader": "^8.0.6"
   }
 }
